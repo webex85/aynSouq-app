@@ -1,12 +1,19 @@
 workflows:
-  android-preview:
-    name: Android Preview
+  ios-preview:
+    name: iOS App Preview
+
     environment:
       flutter: stable
+      xcode: latest
 
     scripts:
-      - flutter pub get
-      - flutter build apk --debug
+      - name: Install dependencies
+        script: |
+          flutter pub get
+
+      - name: Build iOS Simulator App
+        script: |
+          flutter build ios --simulator --debug
 
     artifacts:
-      - build/app/outputs/flutter-apk/app-debug.apk
+      - build/ios/iphonesimulator/*.app
