@@ -14,7 +14,7 @@ dependencies:
   connectivity_plus: ^6.0.3
   lottie: ^3.1.0
   url_launcher: ^6.2.5
-
+  flutter_native_splash: ^2.4.7
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -26,11 +26,12 @@ flutter:
   uses-material-design: true
   assets:
     - assets/logo.png
-
+    - assets/no-internet.json
+    - assets/splash_screen.png
 # SPLASH CONFIG
 flutter_native_splash:
   color: "#ffffff"
-  image: assets/logo.png
+  image: assets/splash_screen.png
   android: true
   ios: true
 

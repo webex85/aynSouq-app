@@ -1,4 +1,4 @@
-package com.example.aynsouq
+package com.webex.aynsouq
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -53,7 +53,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return const Scaffold(
       body: Center(
         child: Image(
-          image: AssetImage("assets/logo.png"),
+          image: AssetImage("assets/splash_screen.png"),
           width: 150,
         ),
       ),
